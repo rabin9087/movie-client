@@ -1,4 +1,6 @@
 import axios from 'axios'
+
+const rootAPI = import.meta.env.VITE_ROOT_API
 export default axios.create({
-    baseURL: "http://localhost:8080/api/v1",
+    baseURL: rootAPI + "/api/v1",
 })
